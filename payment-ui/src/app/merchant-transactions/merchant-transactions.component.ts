@@ -27,7 +27,7 @@ export class MerchantTransactionsComponent implements OnInit {
     if (response.length > 0) {
         alert("Transactions available");
         this.merchantId = '';
-        this.merchantPayments=response[0]
+        this.merchantPayments=response;
       } else {
         alert("No transactions available");
       }
