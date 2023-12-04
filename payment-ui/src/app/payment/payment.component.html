@@ -19,7 +19,9 @@
 
     <button type="button" (click)="makePayment()">Submit</button>
 
-    <ul class="payment-status" *ngIf="paymentStatus">
+     <ul class="payment-status" *ngIf="paymentStatus">
+        <hr>
+        <li><h4>Payment Details</h4></li><br>
         <li><label>Merchant Id</label> {{paymentStatus.merchantId}}</li>
         <li><label>transaction Id</label> {{paymentStatus.transactionId}}</li>
         <li><label>Status</label> {{paymentStatus.status}}</li>
