@@ -1,0 +1,27 @@
+
+
+<div class="form">
+    <h4>Register merchant</h4>
+    <div class="form-control">
+        <label>Name</label>
+        <input type="text" [(ngModel)]="merchantName" placeholder="Merchant name" />
+    </div>
+    <div class="form-control">
+        <label>Email</label>
+        <input type="email" [(ngModel)]="merchantEmail" placeholder="Merchant Email" />
+    </div>
+    <div class="form-control">
+        <label>Business type</label>
+        <input type="text" [(ngModel)]="merchantBusinesstype" placeholder="public or private" />
+    </div>
+    <div class="form-control">
+        <label>Address</label>
+        <textarea rows="10" cols="10" [(ngModel)]="merchantAddress" placeholder="Merchant Address" ></textarea>
+    </div>
+    <div class="form-control">
+        <label>Phone number</label>
+        <input type="tel" [(ngModel)]="merchantPhone" placeholder="Merchant Phone" />
+    </div>
+
+    <button type="button" (click)="registerMerchant()">Submit</button>
+</div>

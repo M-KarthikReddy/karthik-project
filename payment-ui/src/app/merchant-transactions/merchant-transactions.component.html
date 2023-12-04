@@ -1,0 +1,15 @@
+<div class="merchant-transactions"><h4>Enter Merchant Id</h4>
+    <div class="track"><input type="text" name="track" placeholder="Enter merchant id" [(ngModel)]="merchantId" /></div>
+    <br>
+    <button type="button" (click)="trackStatus()">Track Status</button>
+
+    <ul class="payment-info" *ngIf="merchantPayments">
+        <li><label>transaction Id</label> {{merchantPayments.transactionId}}</li>
+        <li><label>Status</label> {{merchantPayments.status}}</li>
+        <li><label>Order Id</label> {{merchantPayments.orderId}}</li>
+        <li><label>Amount</label> {{merchantPayments.amount}}</li>
+    </ul>
+
+</div>
+
+

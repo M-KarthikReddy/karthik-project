@@ -1,0 +1,60 @@
+/* Center the form */
+.status {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    h4 {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .track {
+        margin-bottom: 20px;
+
+        input {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+    }
+
+    button {
+        background-color: #04AA6D;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #038c5a;
+        }
+    }
+
+    /* Center the payment-info and add gap */
+    .payment-info {
+        list-style-type: none;
+        margin: 20px 0 0; /* Added some top margin to create a gap */
+        padding: 0;
+        text-align: center; /* Center the list */
+
+        li {
+            margin-bottom: 10px;
+
+            label {
+                font-weight: bold;
+                margin-right: 5px;
+            }
+        }
+    }
+}
+
+* {
+    font-family: sans-serif;
+}
