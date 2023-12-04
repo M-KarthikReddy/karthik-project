@@ -3,11 +3,14 @@
     <br>
     <button type="button" (click)="trackStatus()">Track Status</button>
 
-    <ul class="payment-info" *ngIf="merchantPayments">
-        <li><label>transaction Id</label> {{merchantPayments.transactionId}}</li>
-        <li><label>Status</label> {{merchantPayments.status}}</li>
-        <li><label>Order Id</label> {{merchantPayments.orderId}}</li>
-        <li><label>Amount</label> {{merchantPayments.amount}}</li>
+    <ul class="payment-info" *ngFor="let item of merchantPayments">
+        <hr>
+        <li><h4>Transactions details</h4></li>
+        <li><label>transaction Id</label> {{item.transactionId}}</li>
+        <li><label>Status</label> {{item.status}}</li>
+        <li><label>Order Id</label> {{item.orderId}}</li>
+        <li><label>Amount</label> {{item.amount}}</li><br><br>
+        <hr>
     </ul>
 
 </div>
